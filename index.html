@@ -1,133 +1,129 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Visit_Bali</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="javasheet" href="slides.java">
-    <style>
-        .mySlides {
-            display: none;
-        }
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:wght@700&family=Bungee+Inline&family=Bungee+Spice&family=Gemunu+Libre:wght@500&family=Oswald:wght@500&family=Overpass&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Visit_Bali</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="javasheet" href="slides.java">
+        <style>
+            .mySlides {
+                display: none;
+            }
         </style>
-    <script src="https://kit.fontawesome.com/d0246a0c5d.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <nav class="navcontainer">
-        <div class="navcontainer2">
-            <div class="navbox2">
-                <i class="fa-sharp fa-solid fa-bars"></i>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:wght@700&family=Bungee+Inline&family=Bungee+Spice&family=Gemunu+Libre:wght@500&family=Oswald:wght@500&family=Overpass&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
+            </style>
+        <script src="https://kit.fontawesome.com/d0246a0c5d.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <nav class="navcontainer">
+            <div class="navcontainer2">
+                <div class="navbox2">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="navbox">
+                <a href="index.html">|Home|</a>
+            </div>
+            <div class="navbox">
+                <a href="events.html">|Entertainment & Events|</a>
+            </div>
+            <div class="navbox">
+                <a href="hotels.html">|Hotels|</a>
+            </div>
+            <div class="navbox">
+                <a href="location.html">|Locations|</a>
+            </div>
+        </nav>
+    
+        <div class="logocontainer">
+            <div class="logobox">
+                <img src="Bali1(1).png" alt="Logo" width="300">
             </div>
         </div>
-        <div class="navbox">
-            <a href="index.html">|Home|</a>
+    
+        <div class="pagebackcontainer" style="background-image: url(backhome2.jpg);">
+            <div class="pagebackbox">
+                <h1>
+                    Visit Bali...
+                </h1>
+            </div>
         </div>
-        <div class="navbox">
-            <a href="events.html">|Entertainment & Events|</a>
+    
+    
+        <div class="slidecontainer">
+            <div class="slidebox">
+                <button class="slidesbutton" onclick="plusDivs(-1)">&#10094; </button>
+                <img class="mySlides" src="backgroundhome.jpg" alt="balipicture" width="1200" height="800">
+                <img class="mySlides" src="backgroundhome2.jpg" alt="balipicture" width="1200" height="800">
+                <img class="mySlides" src="backgroundhome3.jpg" alt="balipicture" width="1200" height="800">
+                <button class="slidesbutton" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
         </div>
-        <div class="navbox">
-            <a href="hotels.html">|Hotels|</a>
+    
+        <div class="aboutcontainer">
+            <div class="aboutbox">
+                <h1>
+                    About Bali
+                </h1>
+            </div>
+            <div class="aboutbox" style="margin: 25px; margin-left: 50px; margin-right: 50px;">
+                <h2>
+                    Bali is the Island of God in Paradise among Indonesian tourism. Furthermore, it is a perfect tourist destination to enjoy the holiday with your family as well as collages. This tropical paradise has a unique blend of modern tourist facilities combined with wonderful shopping, a rich past as well as heritage sites.
+                </h2>
+            </div>
         </div>
-        <div class="navbox">
-            <a href="location.html">|Locations|</a>
-        </div>
-    </nav>
+    
+    
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    
+    
+        <footer class="footercontainer">
+            <div class="footerbox">
+                <h2>
+                    &copy; Aiden Scott Stich
+                </h2>
+            </div>
+            <div class="footerbox">
+                <img src="Bali1(1).png" alt="Logo" width="200">
+            </div>
+            <div class="footerbox">
+                <i class="fa-brands fa-facebook" style="padding: 20px; font-size: x-large;"></i>
+                <i class="fa-brands fa-instagram" style="padding: 20px; font-size: x-large;"></i>
+                <i class="fa-brands fa-twitter" style="padding: 20px; font-size: x-large;"></i>
+            </div>
+    
+            <div class="footerbox">
+                <h2>
+                    Phone (417) 756 9044 
+                </h2>
+            </div>
+            <div class="footerbox">
+                <h2>
+                    <a href="Balivacas@gmail.com">Email Balivacas@gmail.com </a> 
+                </h2>
+            </div>
+        </footer>
+    </body>
+</html>
 
-    <div class="logocontainer">
-        <div class="logobox">
-            <img src="Bali-1 (1).png" alt="Logo" width="300px">
-        </div>
-    </div>
-
-    <div class="pagebackcontainer" style="background-image: url(backhome2.jpg);">
-        <div class="pagebackbox">
-            <h1>
-                Visit Bali...
-            </h1>
-        </div>
-    </div>
-
-    <div class="slidecontainer2">
-        <div class="slidebox2">
-            <h1>
-                
-            </h1>
-        </div>
-    </div>
-
-    <div class="slidecontainer">
-        <div class="slidebox">
-            <button class="slidesbutton" height="95%" onclick="plusDivs(-1)">&#10094; </button>
-            <img class="mySlides" src="backgroundhome.jpg" width="95%" height="95%">
-            <img class="mySlides" src="backgroundhome2.jpg" width="95%" height="95%">
-            <img class="mySlides" src="backgroundhome3.jpg" width="95%" height="95%">
-            <button class="slidesbutton" height="95%" onclick="plusDivs(+1)">&#10095;</button>
-        </div>
-    </div>
-
-    <div class="aboutcontainer">
-        <div class="aboutbox">
-            <h1>
-                About Bali
-            </h1>
-        </div>
-        <div class="aboutbox" style="margin: 25px; margin-left: 50px; margin-right: 50px;">
-            <h2>
-                Bali is the Island of God in Paradise among Indonesian tourism. Furthermore, it is a perfect tourist destination to enjoy the holiday with your family as well as collages. This tropical paradise has a unique blend of modern tourist facilities combined with wonderful shopping, a rich past as well as heritage sites.
-            </h2>
-        </div>
-    </div>
-
-
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>
-
-
-    <footer class="footercontainer">
-        <div class="footerbox">
-            <h2>
-                &copy; Aiden Scott Stich
-            </h2>
-        </div>
-        <div class="footerbox">
-            <img src="Bali-1 (1).png" alt="Logo" width="200px">
-        </div>
-        <div class="footerbox">
-            <i class="fa-brands fa-facebook" style="padding: 20px; font-size: x-large;"></i>
-            <i class="fa-brands fa-instagram" style="padding: 20px; font-size: x-large;"></i>
-            <i class="fa-brands fa-twitter" style="padding: 20px; font-size: x-large;"></i>
-        </div>
-
-        <div class="footerbox">
-            <h2>
-                Phone (417) 756 9044 
-            </h2>
-        </div>
-        <div class="footerbox">
-            <h2>
-                <a href="Balivacas@gmail.com">Email Balivacas@gmail.com </a> 
-            </h2>
-        </div>
-    </footer>
-</body>
